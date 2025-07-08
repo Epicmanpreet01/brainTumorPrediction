@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)](https://www.tensorflow.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/Epicmanpreet01/brain-tumor-detection?style=social)](https://github.com/your-username/brain-tumor-detection)
+[![GitHub stars](https://img.shields.io/github/stars/Epicmanpreet01/brainTumorPrediction?style=social)](https://github.com/Epicmanpreet01/brainTumorPrediction)
 
 > 🔬 A deep learning-based medical image classification system for automatic **brain tumor detection** from MRI scans using **transfer learning** with the **VGG16** architecture.
 
@@ -211,8 +211,8 @@ _Figure 10: Pituitary tumor classification result_
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/brain-tumor-detection.git
-cd brain-tumor-detection
+git clone https://github.com/Epicmanpreet01/brainTumorPrediction.git
+cd brainTumorPrediction
 ```
 
 ### 2️⃣ Install Dependencies
