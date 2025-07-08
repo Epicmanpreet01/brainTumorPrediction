@@ -43,6 +43,16 @@ This project implements a convolutional neural network (CNN) for classifying bra
 
 The dataset consists of labeled brain MRI images organized into training and testing sets:
 
+### 📥 Dataset Download
+
+**Download the complete dataset from Google Drive:**
+
+📁 [**Brain Tumor MRI Dataset**](https://drive.google.com/file/d/1pSt9WQ-bM8glc6dcxh6LR33454DjHhql/view?usp=sharing)
+
+> 💡 **Note**: Download and extract the dataset to your project directory before running the model.
+
+### 📁 Dataset Structure
+
 ```
 📁 Dataset Structure
 ├── 📂 Training/
@@ -211,9 +221,11 @@ cd brain-tumor-detection
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Prepare Dataset
+### 3️⃣ Download Dataset
 
-Ensure your dataset follows the structure shown in the [Dataset](#-dataset) section.
+1. Download the dataset from the [Google Drive link](https://drive.google.com/file/d/1pSt9WQ-bM8glc6dcxh6LR33454DjHhql/view?usp=sharing)
+2. Extract the downloaded file to your project directory
+3. Ensure the dataset follows the structure shown in the [Dataset](#-dataset) section
 
 ### 4️⃣ Run the Model
 
