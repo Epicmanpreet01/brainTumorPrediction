@@ -1,4 +1,5 @@
 model.keras
 .tumorPredictionenv
-Testing
-Training
+data
+/images/logo.png
+braintumorenv
