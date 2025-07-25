@@ -5,11 +5,11 @@
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/Epicmanpreet01/brainTumorPrediction?style=social)](https://github.com/Epicmanpreet01/brainTumorPrediction)
 
-> 🔬 A deep learning-based medical image classification system for automatic **brain tumor detection** from MRI scans using **transfer learning** with the **VGG16** architecture.
+>  A deep learning-based medical image classification system for automatic **brain tumor detection** from MRI scans using **transfer learning** with the **VGG16** architecture.
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [🎯 Overview](#-overview)
 - [📊 Dataset](#-dataset)
@@ -26,11 +26,11 @@
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 This project implements a convolutional neural network (CNN) for classifying brain MRI images into four categories: **glioma**, **meningioma**, **pituitary tumor**, and **no tumor**. The model leverages transfer learning with VGG16 to achieve high accuracy in medical image classification.
 
-### 🎯 Objectives
+###  Objectives
 
 - Develop an automated brain tumor detection system
 - Classify MRI images into 4 distinct categories
@@ -39,7 +39,7 @@ This project implements a convolutional neural network (CNN) for classifying bra
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The dataset consists of labeled brain MRI images organized into training and testing sets:
 
@@ -83,7 +83,7 @@ _Figure 1: Random sample of MRI images from the dataset_
 
 ---
 
-## 🛠️ Technologies & Libraries
+##  Technologies & Libraries
 
 ### Core Dependencies
 
@@ -103,38 +103,38 @@ pip install -r requirements.txt
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-- 🔄 **Transfer Learning**: Leverages pre-trained VGG16 for feature extraction
-- 🎯 **Multi-class Classification**: Distinguishes between 4 tumor types
-- 📊 **Comprehensive Evaluation**: Confusion matrix, ROC-AUC, classification reports
-- 🖼️ **Visual Predictions**: Displays predictions with confidence scores
-- 📈 **Training Monitoring**: Real-time accuracy and loss tracking
-- 🔍 **Data Preprocessing**: Automated image normalization and augmentation
+-  **Transfer Learning**: Leverages pre-trained VGG16 for feature extraction
+-  **Multi-class Classification**: Distinguishes between 4 tumor types
+-  **Comprehensive Evaluation**: Confusion matrix, ROC-AUC, classification reports
+-  **Visual Predictions**: Displays predictions with confidence scores
+-  **Training Monitoring**: Real-time accuracy and loss tracking
+-  **Data Preprocessing**: Automated image normalization and augmentation
 
 ---
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 ```
-🧠 VGG16-based Brain Tumor Classifier
+ VGG16-based Brain Tumor Classifier
 ┌─────────────────────────────────────┐
-│  📥 Input Layer (224×224×3)         │
+│   Input Layer (224×224×3)           │
 ├─────────────────────────────────────┤
-│  🔒 Pre-trained VGG16 Base          │
+│   Pre-trained VGG16 Base            │ 
 │     (frozen weights)                │
 ├─────────────────────────────────────┤
-│  🔄 Flatten Layer                   │
+│   Flatten Layer                     │
 ├─────────────────────────────────────┤
-│  🧠 Dense Layer (256 units, ReLU)   │
+│   Dense Layer (256 units, ReLU)     │
 ├─────────────────────────────────────┤
-│  🛡️ Dropout Layer (0.5)             │
+│   Dropout Layer (0.5)               │
 ├─────────────────────────────────────┤
-│  📤 Output Layer (4 units, Softmax) │
+│   Output Layer (4 units, Softmax)   │
 └─────────────────────────────────────┘
 ```
 
-### 🔧 Training Configuration
+###  Training Configuration
 
 - **Optimizer**: Adam (`learning_rate=0.0001`)
 - **Loss Function**: Categorical Crossentropy
@@ -144,14 +144,14 @@ pip install -r requirements.txt
 
 ---
 
-## 📈 Performance Metrics
+##  Performance Metrics
 
-### 📊 Training History
+###  Training History
 
 ![Training History](images/model_training_history.png)
 _Figure 4: Model training progress showing accuracy and loss over epochs_
 
-### 🔍 Detailed Analysis
+###  Detailed Analysis
 
 |               **Confusion Matrix**               |           **ROC-AUC Curves**           |
 | :----------------------------------------------: | :------------------------------------: |
@@ -160,11 +160,11 @@ _Figure 4: Model training progress showing accuracy and loss over epochs_
 
 ---
 
-## 🧪 Prediction Examples
+##  Prediction Examples
 
 The model demonstrates strong performance across all tumor types:
 
-### 🧠 Meningioma Detection
+###  Meningioma Detection
 
 ```python
 img_path = './Testing/meningioma/Te-me_0017.jpg'
@@ -174,7 +174,7 @@ detect_and_display(img_path, model)
 ![Meningioma Prediction](images/predict_meningioma.png) <br>
 _Figure 7: Meningioma classification result_
 
-### 🧠 Glioma Detection
+###  Glioma Detection
 
 ```python
 img_path = './Training/glioma/Tr-gl_0021.jpg'
@@ -184,7 +184,7 @@ detect_and_display(img_path, model)
 ![Glioma Prediction](images/predict_glioma.png) <br>
 _Figure 8: Glioma classification result_
 
-### 🧠 Healthy Brain Detection
+###  Healthy Brain Detection
 
 ```python
 img_path = './Testing/notumor/Te-no_0010.jpg'
@@ -194,7 +194,7 @@ detect_and_display(img_path, model)
 ![No Tumor Prediction](images/predict_notumor.png) <br>
 _Figure 9: Healthy brain classification result_
 
-### 🧠 Pituitary Tumor Detection
+###  Pituitary Tumor Detection
 
 ```python
 img_path = './Testing/pituitary/Te-piTr_0009.jpg'
@@ -254,14 +254,14 @@ detect_and_display(img_path, model)
 
 ## 📊 Results
 
-### 🎯 Key Achievements
+###  Key Achievements
 
 - ✅ **High Accuracy**: Achieved excellent classification performance
 - ✅ **Robust Detection**: Clear distinction between all tumor types
 - ✅ **Real-time Predictions**: Fast inference with visual feedback
 - ✅ **Medical Reliability**: Confident tumor detection in unseen MRI scans
 
-### 📈 Performance Summary
+###  Performance Summary
 
 |      **Metric**      | **Value** |
 | :------------------: | :-------: |
@@ -272,9 +272,9 @@ detect_and_display(img_path, model)
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
-### 🎯 Planned Improvements
+###  Planned Improvements
 
 - [ ] **Advanced Architectures**: Implement ResNet, EfficientNet, Vision Transformers
 - [ ] **Model Interpretability**: Add Grad-CAM visualization for attention maps
@@ -283,19 +283,19 @@ detect_and_display(img_path, model)
 
 ---
 
-## 📚 References
+##  References
 
-### 📊 Dataset Sources
+###  Dataset Sources
 
 - [Kaggle Brain MRI Dataset](https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection)
 - [Brain Tumor Classification (MRI)](https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri)
 
-### 📖 Technical Papers
+###  Technical Papers
 
 - [VGG16 Architecture](https://arxiv.org/abs/1409.1556) - Very Deep Convolutional Networks for Large-Scale Image Recognition
 - [Transfer Learning](https://arxiv.org/abs/1411.1792) - How transferable are features in deep neural networks?
 
-### 🛠️ Documentation
+###  Documentation
 
 - [TensorFlow Documentation](https://www.tensorflow.org/)
 - [Keras API Reference](https://keras.io/)
@@ -303,7 +303,7 @@ detect_and_display(img_path, model)
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
